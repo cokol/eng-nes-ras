@@ -24,6 +24,10 @@
     
     <script type="text/javascript">
     
+    
+      // Next city name
+      var nextCity = "Архангельске";
+    
       /* Server hours and minutes should be inserted below */
       var h=6;
       var m=0;
@@ -62,6 +66,9 @@
       $(document).ready(function() {
         startHours();
         startMinutes();
+        
+        $(".next-city").html(nextCity);
+        
       });
     
     </script>
@@ -158,7 +165,7 @@
           			<div class="pic-title pic-title-afterload">
           			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
           			  <div class="pt-city">Санкт-Петербург</div>
-          			  <div class="pt-now">Смотри рассвет в Архангельске через час</div>
+          			  <div class="pt-now">Смотри рассвет в <span class="next-city"></span> через час</div>
           			</div>
           		</div>
           	</div>
@@ -174,7 +181,7 @@
           			<div class="pic-title pic-title-afterload">
           			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
           			  <div class="pt-city">Мурманск</div>
-          			  <div class="pt-now">Смотри рассвет в Архангельске через час</div>
+          			  <div class="pt-now">Смотри рассвет в <span class="next-city"></span> через час</div>
           			</div>
           		</div>
           	</div>
@@ -190,20 +197,22 @@
           			<div class="pic-title pic-title-afterload">
           			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
           			  <div class="pt-city">Вологда</div>
-          			  <div class="pt-now">Смотри рассвет в Архангельске через час</div>
+          			  <div class="pt-now">Смотри рассвет в <span class="next-city"></span> через час</div>
           			</div>
           		</div>
           	</div>
           </div>
           <!-- Picture slider END -->
           
-          <div class="main-cup"></div>
-            
         </div>
         
         <!-- content END -->
 
       </div>
+      
+      <!-- Кружка -->
+      
+      <div class="main-cup"></div>
       
     </div>
     <!-- wrapper END -->
@@ -306,6 +315,7 @@
     <!-- wallpaprers popup -->
     
     <div class="popup" id="wallpapers-popup">
+      <div class="close"></div>
       <div class="popup-cont">
         <h2>Обои для рабочего стола:</h2>
         <h3>Выберите рассвет</h3>
@@ -315,7 +325,9 @@
             <div class="wg-pic">
               <img src="files/wallpaper-1-tmb.jpg" />
               <div class="pic-mask"></div>
-              <div class="ttl">Москва</div>
+              <div class="ttl">
+                остров Мадейра
+              </div>
             </div>
             <div class="wg-links">
               <a href="#">800&times;600</a><br/>
@@ -327,7 +339,7 @@
             <div class="wg-pic">
               <img src="files/wallpaper-2-tmb.jpg" />
               <div class="pic-mask"></div>
-              <div class="ttl">Москва</div>
+              <div class="ttl">Гренландия</div>
             </div>
             <div class="wg-links">
               <a href="#">800&times;600</a><br/>
@@ -339,7 +351,7 @@
             <div class="wg-pic">
               <img src="files/wallpaper-3-tmb.jpg" />
               <div class="pic-mask"></div>
-              <div class="ttl">Москва</div>
+              <div class="ttl">Рио-де-Жанейро</div>
             </div>
             <div class="wg-links">
               <a href="#">800&times;600</a><br/>
@@ -351,7 +363,7 @@
             <div class="wg-pic">
               <img src="files/wallpaper-1-tmb.jpg" />
               <div class="pic-mask"></div>
-              <div class="ttl">Москва</div>
+              <div class="ttl">Санкт-Петербург</div>
             </div>
             <div class="wg-links">
               <a href="#">800&times;600</a><br/>
@@ -363,7 +375,7 @@
             <div class="wg-pic">
               <img src="files/wallpaper-3-tmb.jpg" />
               <div class="pic-mask"></div>
-              <div class="ttl">Москва</div>
+              <div class="ttl">Абу-Даби</div>
             </div>
             <div class="wg-links">
               <a href="#">800&times;600</a><br/>
@@ -375,7 +387,7 @@
             <div class="wg-pic">
               <img src="files/wallpaper-1-tmb.jpg" />
               <div class="pic-mask"></div>
-              <div class="ttl">Москва</div>
+              <div class="ttl">Мумбаи</div>
             </div>
             <div class="wg-links">
               <a href="#">800&times;600</a><br/>
@@ -387,7 +399,7 @@
             <div class="wg-pic">
               <img src="files/wallpaper-2-tmb.jpg" />
               <div class="pic-mask"></div>
-              <div class="ttl">Москва</div>
+              <div class="ttl">Владивосток</div>
             </div>
             <div class="wg-links">
               <a href="#">800&times;600</a><br/>
@@ -555,7 +567,8 @@
         
         <div class="other-pup-link">
           Рассветы в твоем компюьтере:<br />
-          <a href="#" onclick="openPopup('screensaver-popup');return false;">Скачать скринсейвер</a>
+          <!-- <a href="#" onclick="openPopup('screensaver-popup');return false;">Скачать скринсейвер</a> -->
+          <div class="txt">Скоро в этом разделе можно будет скачать скринсэйвер</div>
         </div>
         
       </div>
@@ -567,6 +580,7 @@
     <!-- screensaver popup -->
     
     <div class="popup" id="screensaver-popup">
+      <div class="close"></div>
       <div class="popup-cont">
         <h2>Скринсейвер:</h2>
         

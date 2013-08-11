@@ -107,6 +107,7 @@ img {border:none}
 .header-menu ul li {float:left; margin:0 0 0 28px; padding:0; position:relative}
 .header-menu ul li ul {position:absolute; left:0; top:24px; font-size:12px; white-space:nowrap}
 .header-menu ul li ul li {margin:0 27px 0 0; float:none; display:inline-block}
+.header-menu ul li .active {color: #fff}
 
 .header-expert-link {position:absolute; right:0; top:90px; font-size:14px; padding:0 0 0 15px; background:url(../images/header-expert-link.png) no-repeat left center}
 
@@ -124,7 +125,8 @@ img {border:none}
 .header-section-test h1 {font-size:24px; line-height:32px}
 .header-section ul {margin:0; padding:18px 0 0 0; list-style:none; width:100%; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
 .header-section ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.header-section ul li {float:left; margin:0 40px 0 0; padding:0; position:relative}
+.header-section ul li {float:left; margin:0 35px 0 0; padding:0; position:relative}
+.header-section ul li .active {color: #fff}
 
 .page-recipes .header-section {left:-7px; top:141px; background:url(../images/header-section-recipes.png) no-repeat left 22px; padding:0 0 0 155px; min-height:175px}
 
@@ -153,6 +155,7 @@ img {border:none}
 .header-expert-big:hover {color:#fff}
 .page-proizvodstvo .header-expert-big {top:438px}
 .page-putevoditel .header-expert-big {top:450px}
+.page-socotvetstvennost  .header-expert-big {top:450px}
 
 .proizvodstvo-header-photo {position:absolute; left:9px; top:156px; width:344px; height:346px; overflow:hidden; line-height:0}
 .proizvodstvo-header-photo-sup{position:absolute; left:0; top:0}
@@ -180,6 +183,7 @@ img {border:none}
 .putevoditel-menu ul {margin:0; padding:0; list-style:none}
 .putevoditel-menu ul li {margin:0; padding:0 0 16px 0}
 .putevoditel-menu ul li span {font-size:16px}
+.putevoditel-menu ul li .active {font-size:16px; color: #fff}
 
 .header-way {display:block; position:absolute; left:457px; top:410px; width:130px; height:130px; cursor:pointer; color:#fff; text-decoration:none; font:12px/15px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
 .header-way sup {position:absolute; display:block; left:0; top:0; width:130px; height:130px; background:url(../images/header-way.png)}
@@ -192,23 +196,26 @@ img {border:none}
 .header-expert-title h1 {font:19px/23px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; text-transform:uppercase; margin:0; padding:0; letter-spacing:1px}
 .header-catalogue-title {position:absolute; left:133px; top:159px}
 .header-catalogue-title h1 {font:24px/26px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; text-transform:uppercase; margin:0; padding:0; letter-spacing:1px}
-.header-catalogue-title h1 span {color:#58330d}
-.header-catalogue-title small {font-size:12px}
-.page-gold-video .header-catalogue-title {top:165px}
 .header-section-expert h1 {font-size:19px; line-height:23px; padding:25px 0 0 0}
+
+.page-gold-video .header-catalogue-title {top:165px}
 
 .main {height:648px; position:relative}
 
-.main-75 {position:absolute; right:-41px; top:-222px; width:580px; height:586px; background:url(../images/main-75-bg.png); overflow:hidden}
+
+
+
+.main-75 {display:block; position:absolute; right:-41px; top:-222px; width:580px; height:586px; background:url(../images/main-75-bg.png); overflow:hidden; text-decoration:none; cursor:pointer}
 .main-75-logo {position:absolute; right:42px; top:216px}
 .main-75-text-1 {margin:317px 0 0 75px; position:relative; z-index:2; font:24px/26px SansRoundedWeb, arial, helvetica, sans-serif; letter-spacing:1px; color:#fff; text-transform:uppercase; padding:0 0 0 28px; background:url(../images/main-75-text-1.png) no-repeat left center}
-.main-75-text-1 a,
-.main-75-text-1 a:hover {color:#fff}
+.main-75-text-1 span,
+.main-75-text-1 span:hover {color:#fff}
 .main-75-text-2 {margin:0 0 0 103px; color:#fff; font:16px/24px SansRoundedLightWeb, arial, helvetica, sans-serif; letter-spacing:1px; text-indent:20px}
 .main-75-text-3 {font:31px/33px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; letter-spacing:1px; margin:18px 0 0 75px}
 .main-75-text-4 {margin:6px 0 0 75px; line-height:0}
 .main-75-text-5 {font:31px/33px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; letter-spacing:1px; margin:14px 0 0 150px}
 
+.main-vk{display:block; position:absolute; right: 0px; top: -182px; width: 546px; height: 530px; background: url('/upload/images/site_nescafe_banner.png'); overflow:hidden; text-decoration:none; cursor:pointer}
 .main-gold {display:block; width:277px; height:276px; position:absolute; left:170px; top:151px; overflow:hidden}
 .main-gold img {display:none; position:absolute; left:0; top:0}
 .main-gold img:first-child {display:block}
@@ -258,6 +265,7 @@ img {border:none}
 .content-green h3,
 .content-green h4,
 .content-green h5 {color:#759003}
+.content h3 a {color: #cf0606}
 
 .content-img-max {float:left; clear:left; margin:0 44px 20px 14px; width:234px; height:237px; position:relative; overflow:hidden; line-height:0}
 .content-img-max-sup {position:absolute; left:0; top:0}
@@ -343,12 +351,12 @@ img {border:none}
 .window-form .content-submit {height:54px; background:url(../images/content-submit-red.png)}
 .window-form .content-submit input {padding:0 38px 4px 38px; height:54px; background:url(../images/content-submit-red.png) no-repeat right -54px; color:#fff; font:14px/48px SansRoundedWeb, arial, helvetica, sans-serif}
 
-.pager {padding:0 0 42px 0; line-height:25px}
-.pager a {color:#cf0606; text-decoration:underline; margin:0 18px 0 0; display:inline-block; vertical-align:middle}
-.pager a:hover {color:#cf0606; text-decoration:none}
-.pager span {color:#fff; margin:0 10px 0 -11px; display:inline-block; vertical-align:middle; width:25px; height:25px; background:url(../images/pager.png); text-align:center}
-.pager span:first-child {margin-left:0}
-.pager a.prev {color:#898989}
+.pager {font-weight:bold; padding:0 0 42px 0}
+.pager a {color:#888; text-decoration:underline; margin:0 4px 0 0}
+.pager a:hover {color:#b2b2b2; text-decoration:none}
+.pager span {color:#b2b2b2; margin:0 4px 0 0}
+
+.pager a.prev {color:#b2b2b2}
 
 .registration-form {width:620px; padding:5px 0 0 20px}
 .registration-form-inner {width:364px}
@@ -379,7 +387,7 @@ img {border:none}
 .contacts-email {font-size:14px; line-height:24px; color:#000; padding:0 0 30px 0}
 .contacts-email a {color:#000; text-decoration:underline}
 .contacts-email a:hover {color:#000; text-decoration:none}
-.contacts-text {float:right; width:550px; font-size:14px; line-height:24px; color:#000; padding:69px 0 0 0}
+.contacts-text {float:right; width:550px; font-size:14px; line-height:24px; color:#000; padding:0 0 0 0}
 .contacts-text p {padding:0 0 24px 0}
 .contacts-text a {color:#000; text-decoration:underline}
 .contacts-text a:hover {color:#000; text-decoration:none}
@@ -412,7 +420,7 @@ img {border:none}
 .map ul li ul li a:hover {color:#505050}
 
 .journalist {position:relative; margin-right:-30px}
-.journalist-item {display:inline-block; vertical-align:top; width:460px; padding:0 20px 20px 0; position:relative; display:inline!ie; zoom:1}
+.journalist-item {display:inline-block; vertical-align:top; width:450px; padding:0 20px 20px 0; position:relative; display:inline!ie; zoom:1}
 .journalist-item:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .journalist-item-number {position:absolute; left:-10px; top:-22px; z-index:2; width:56px; height:56px; background:url(../images/number.png); color:#fff; text-align:center; font:32px/62px SansRoundedWeb, arial, helvetica, sans-serif}
 .journalist-item-inner {margin-left:204px; padding:20px 0 0 0}
@@ -443,14 +451,18 @@ img {border:none}
 .recipes-item-inner {padding:32px 0 0 13px}
 .recipes-item .detail-link {padding:0 0 0 18px; line-height:18px; background:url(../images/li.png) no-repeat left 2px; letter-spacing:1px}
 
-.way {width:100%}
+.way {width:100%; position: relative}
 .way:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 
 .way-left {float:left; width:291px; padding:35px 0 0 0}
-.way-left-photo {position:relative; width:236px; height:236px; overflow:hidden; margin:0 0 16px 14px}
+.way-left-photo {position:relative; width:236px; height:236px; overflow:hidden; margin:0 0 0 14px}
 .way-left-photo-sup {position:absolute; left:0; top:0}
-.way-left-title {margin-top:-16px; padding:0 0 0 20px; font:14px/18px SansRoundedWeb, arial, helvetica, sans-serif; color:#cf0606; text-transform:uppercase; letter-spacing:1px; background:url(../images/li.png) no-repeat 1px 2px; margin-top:46px}
+.way-left-title {padding:0 0 0 20px; font:14px/18px SansRoundedWeb, arial, helvetica, sans-serif; color:#cf0606; text-transform:uppercase; letter-spacing:1px; background:url(../images/li.png) no-repeat 1px 2px; margin-top: 46px}
+.way-breadcrumbs {position: absolute; left: 70px; top: 0px; font:14px/18px SansRoundedWeb, arial, helvetica, sans-serif; color:#cf0606; text-transform:uppercase; letter-spacing:1px; padding:0 0 0 20px; background:url(../images/way-breadcrumbs.png) no-repeat left 3px}
+.way-breadcrumbs a {color: #cf0606;}
 
+.way-left-title a{color: #cf0606;}
+.way-left-title a:hover{color: #db3333;}
 .way-content {float:left; width:400px}
 .way-content h2 {padding-right:30px}
 
@@ -580,7 +592,7 @@ img {border:none}
 .catalogue-rubric-1 a,
 .catalogue-rubric-2 a,
 .catalogue-rubric-3 a,
-.catalogue-rubric-4 a {background:url(../images/fancybox_loading.gif) no-repeat center}
+.catalogue-rubric-4 a {background:url(../images/test/small_loader.gif) no-repeat center}
 .catalogue-item-01 {float:left; margin:13px 0 0 0; min-width:113px; min-height:140px}
 .catalogue-item-02 {float:left; margin:4px 0 0 -23px; min-width:124px; min-height:154px}
 .catalogue-item-03 {float:left; margin:3px 0 0 -29px; min-width:124px; min-height:155px}
@@ -612,6 +624,7 @@ img {border:none}
 .page-3in1 .product {height:935px}
 .page-3in1-2 .product {height:915px}
 .page-3in1-3 .product {height:925px}
+.page-gold-video .product {height:auto}
 .page-3in1-4 .product {height:915px}
 .page-alta-rica .product {height:905px}
 .page-classic .product {height:875px}
@@ -620,8 +633,8 @@ img {border:none}
 .page-gold-strong .product {height:925px}
 .page-green-blend .product {height:865px}
 .page-montego .product {height:915px}
-.page-gold-video .product {height:auto}
 
+.page-product-flash .product > img {display:none}
 .product-other {position:absolute; left:27px; top:121px; line-height:0; width:100px}
 .product-other-up {display:block; margin:0 auto 19px auto; width:27px; height:15px; background:url(../images/product-slider-arrows.png) no-repeat left -15px}
 .product-other-up.disabled {background-position:left top; cursor:default}
@@ -631,7 +644,6 @@ img {border:none}
 .product-other-down {display:block; margin:0 auto 0 auto; width:27px; height:15px; background:url(../images/product-slider-arrows.png) no-repeat -27px -15px}
 .product-other-down.disabled {background-position:-27px top; cursor:default}
 
-.page-product-flash .product > img {display:none}
 .product-3in1-classic {position:absolute; left:96px; top:14px}
 .product-3in1-caramel {position:absolute; left:163px; top:16px}
 .product-alta-rica {position:absolute; left:174px; top:-45px}
@@ -667,7 +679,7 @@ img {border:none}
 .product-window-content table td {border-left:1px solid #d9d9d9; border-top:1px solid #d9d9d9; vertical-align:top; padding:3px 8px 2px 8px; text-align:left}
 .product-window-content table td:first-child {border-left:none; font-weight:bold; padding-left:0}
 .product-window-close {display:block; position:absolute; right:71px; top:20px; width:11px; height:10px; background:url(../images/product-window-close.png)}
-.product-window-text {text-align:left; padding:0 0 0 17px; color:#a20909; font:16px/19px SansRoundedWeb, arial, helvetica, sans-serif; background:url(../images/product-window-text.png) no-repeat left 2px; margin:0 18px}
+.product-window-text {text-align:left; padding:0 0 0 17px; color:#a20909; font:14px/19px SansRoundedWeb, arial, helvetica, sans-serif; background:url(../images/product-window-text.png) no-repeat left 2px; margin:0 18px}
 
 .test {width:100%; position:relative; z-index:3}
 .test:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -675,7 +687,7 @@ img {border:none}
 .test-form-title {font:24px/26px SansRoundedWeb, arial, helvetica, sans-serif; color:#bfbfbf; letter-spacing:1px; padding:0 0 38px 0}
 .test-form  form {margin:0; padding:0}
 .test-form-question {font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#dd250b; padding:0 0 12px 0}
-.test-form-variants {font-size:14px; color:#000; position:relative}
+.test-form-variants {font-size:14px; color:#000; position: relative;}
 .test-form-question-prev,
 .test-form-question-next {display:block; position:absolute; width:42px; height:66px; background:url(../images/test-form-arrows.png); bottom:40px; font:18px/22px SansRoundedWeb, arial, helvetica, sans-serif; color:#cac9c9; text-align:center}
 .test-form-question-prev {left:-87px}
@@ -686,14 +698,15 @@ img {border:none}
 .test-form-question-next span {display:none; width:149px; height:56px; padding:37px 0 0 0; background:url(../images/test-form-next.png); position:absolute; left:-94px; top:87px}
 .test-form-question-next:hover {background-position:-42px -66px; color:#cac9c9}
 .test-form-question-next:hover span {display:block}
-
+.test-form .content-link-2 {font-size:18px; line-height:20px; text-transform:uppercase; letter-spacing:1px}
+.test-form .content-link-2 img {vertical-align:middle; margin:0 0 3px 15px}
 .test-res {float:right; width:563px; height:563px; position:relative; background:url(../images/test-res-bg.png); margin:-107px 0 0 0}
 .test-res-cup-1 {position:absolute; left:131px; top:134px}
 .test-res-cup-2 {position:absolute; left:131px; top:-10px}
 .test-res-product-1 {position:absolute; left:225px; top:-10px}
 .test-res-product-1-min {position:absolute; left:51px; top:317px}
 .test-res-product-2 {position:absolute; left:373px; top:40px}
-.test-res-product-2-big {position:absolute; left:135px; top:-108px}
+.test-res-product-2-big {position:absolute; left: 223px; top: -45px;}
 .test-res-product-3 {position:absolute; left:406px; top:231px}
 .test-res-product-3-min {position:absolute; left:382px; top:72px}
 .test-res-product-4 {position:absolute; left:320px; top:389px}
@@ -721,7 +734,6 @@ img {border:none}
 .page-proizvodstvo .footer {max-width:1520px}
 .page-putevoditel .footer {max-width:1400px}
 .page-socotvetstvennost .footer {max-width:1400px}
-.page-error  .footer {max-width:1280px; margin-left:auto; margin-right:auto}
 
 .page-sunrise .footer {
   background:url(../images/footer-bg-sr.png) center top no-repeat;
@@ -745,7 +757,7 @@ img {border:none}
 .page-sunrise .footer-inner {width:940px; margin:0 auto; height:207px; position:relative; padding:106px 0 0 0;}
 
 
-.footer-social {width:100%; height:60px; position:relative; z-index:2;margin-top:30px;}
+.footer-social {width:100%; height:60px; position:relative; z-index:2}
 .footer-social:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 
 .footer-social-like {float:left; padding:0 20px 0 0; line-height:0}
@@ -784,7 +796,7 @@ img {border:none}
 
 .footer-nestle {position:absolute; right:0; bottom:0; line-height:0; width:137px; height:92px; overflow:hidden}
 .page-main .footer-nestle {right:5px}
-
+.page-error  .footer {max-width:1280px; margin-left:auto; margin-right:auto}
 .window {display:none; position:fixed; width:616px; z-index:9999; left:50%; top:50%; margin:-212px 0 0 -308px}
 .window-inner {position:relative; background:#cf0606; padding:50px 74px 0 41px; border-radius:10px; -moz-border-radius:13px; -webkit-border-radius:13px; -khtml-border-radius:13px; -webkit-box-shadow:0 10px 21px rgba(0, 0, 0, .39); -moz-box-shadow:0 10px 21px rgba(0, 0, 0, .39); box-shadow:0 10px 21px rgba(0, 0, 0, .39)}
 .window-ctrl-form {position:relative}
@@ -862,7 +874,7 @@ img {border:none}
 .main-berry-step-5-7 {display:none; position:absolute; left:903px; top:1499px}
 
 .main-step-7-text {position:absolute; left:1003px; top:2401px; font-size:18px; line-height:22px; color:#fff; width:250px; opacity:0}
-.main-step-7-video {position:absolute; left:1359px; top:2186px; width:347px; height:347px; overflow:hidden; line-height:0; opacity:0}
+.main-step-7-video {position:absolute; left:1359px; top:2186px; width:347px; height:347px; overflow:hidden; line-height:0}
 .main-step-7-video img {display:block; position:relative; left:1px; top:0}
 .main-step-7-video sup {position:absolute; left:0; top:0; width:347px; height:347px; display:block; background:url(../images/main-step-7-video/main-step-7-video.png)}
 .main-step-7-photo {position:absolute; left:1286px; top:2454px; opacity:0}
@@ -935,7 +947,7 @@ img {border:none}
 .window-success-text {color:#fff; text-align:center; font:24px/30px SansRoundedWeb, arial, helvetica, sans-serif; padding:0 0 51px 0}
 
 .profile-registration-form {width:auto}
-.profile {width:100%; margin-top:-23px; position:relative}
+.profile {width:100%;margin-top: -23px;position: relative;}
 .profile:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .profile-photo {float:left; width:181px; height:181px; position:relative; line-height:0; overflow:hidden; margin:0 63px 0 7px}
 .profile-photo em {position:absolute; left:0; top:0; display:block; width:181px; height:181px; background:url(../images/profile-photo.png)}
@@ -952,6 +964,7 @@ img {border:none}
 
 .window-text {color:#fff; padding:0 0 51px 0}
 
+#aspnetForm {margin:0 0 -18px 0; padding:0}
 .error-505 {background:url(../images/505.png) no-repeat center bottom; text-align:center; margin-top:-165px; padding:0 0 280px 0}
 .error-505-title {font:130px/130px SansRoundedWeb, arial, helvetica, sans-serif; color:#ad0b0e}
 .error-505-text {font:27px/27px SansRoundedWeb, arial, helvetica, sans-serif; color:#3b1000; margin-top:-17px}
@@ -960,6 +973,8 @@ img {border:none}
 .error-404-title {font:130px/130px SansRoundedWeb, arial, helvetica, sans-serif; color:#ad0b0e}
 .error-404-text {font:27px/24px SansRoundedWeb, arial, helvetica, sans-serif; color:#3b1000; margin-top:-17px}
 
+
+.header-test.header-test-recipes{left: 710px; top: 210px;}
 .gold-video {width:611px; margin:56px 0 0 133px}
 .gold-video-title {text-align:right; line-height:0}
 .product-video {position:relative; padding:3px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px; background:url(../images/product-video-bg.png)}
@@ -1037,7 +1052,7 @@ img {border:none}
 .recipes-text {font:18px/24px SansRoundedLightWeb, arial, helvetica, sans-serif; color:#000; padding:0 0 0 145px; margin-top:-10px}
 
 #product-flash {position:relative; overflow:hidden}
-.product-flash-wrap {position:absolute; left:-40px; top:41px; width:1089px; height:836px; z-index:-1; overflow:hidden}
+.product-flash-wrap {position:absolute; left:-40px; top:39px; width:1089px; height:836px; z-index:-1; overflow:hidden}
 .page-product-flash .wrapper-inner {background:url(../images/bg-product-flash.png) no-repeat center top}
 
 /* New classes */
@@ -1077,7 +1092,7 @@ img {border:none}
 }
 
 .page-sunrise .header-links .link-wallpapers {
-  font:10px SansRoundedWeb, arial, helvetica, sans-serif;
+  font:12px SansRoundedWeb, arial, helvetica, sans-serif;
 }
 
 .page-sunrise .header-links .link-wallpapers img {
@@ -1085,7 +1100,7 @@ img {border:none}
 }
 
 .page-sunrise .header-links .link-wallpapers .cont {
-  margin:43px 29px 0 42px;
+  margin:26px 29px 0 46px;
   padding:20px 0;
   cursor:pointer;
 }
@@ -1248,6 +1263,16 @@ img {border:none}
   display:none;
 }
 
+.page-sunrise .popup .close {
+  width:20px;
+  height:20px;
+  background:url(../images/product-window-close.png) 5px 5px no-repeat;
+  cursor:pointer;
+  position:absolute;
+  right:193px;
+  top:174px;
+}
+
 .page-sunrise .popup .popup-cont {
   padding:165px 180px 33px 200px;
 }
@@ -1324,18 +1349,42 @@ img {border:none}
   top:0;
   left:0;
   font-family:SansRoundedWeb, arial, helvetica, sans-serif;
-  font-size:18px;
+  font-size:15px;
   color:#fff;
   width:130px;
+  height:125px;
   text-align:center;
-  padding-top:52px;
   text-transform:uppercase;
   font-weight:normal;
-  display:none;
+  display:block !important;
+}
+
+.page-sunrise .wallpapers-gallery .wg-pic .ttl .txt {
+  position:absolute;
+  width:130px;
+  height:125px;
+  left:0;
+  top:0;
 }
 
 .page-sunrise .wallpapers-gallery .wg-pic .ttl span {
-  z-index:-1 !important;
+  width:130px;
+  height:125px;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  *display:block;
+  *padding-top:48px;
+}
+
+.page-sunrise .wallpapers-gallery .wg-pic .ttl .shadow {
+  position:absolute;
+  left:1px;
+  top:1px;
+  width:130px;
+  height:125px;
+  z-index:-1;
+  color:#000;
 }
 
 .page-sunrise .wallpapers-gallery .wg-pic img {
@@ -1391,6 +1440,10 @@ img {border:none}
   font-weight:normal;
   text-align:right;
   padding:12px 84px 0 0;
+}
+
+.page-sunrise .popup .other-pup-link .txt {
+  font-size:12px;
 }
 
 .page-sunrise .popup .other-pup-link a,

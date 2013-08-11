@@ -31,9 +31,11 @@ $(window).resize(function() {
 function cupMove() {
   
     if ($(".wrapper").width() > 1000 && $(".wrapper").width() < 2084) {
-      $(".main-cup").css("margin-bottom", $(".content").height() - $(".wrapper").height() + 610 - ($(window).width() - 1000)*.1 - $(window).width()*$(window).width()*$(window).width()*$(window).width()*0.000000000008);
+      $(".main-cup").css("margin-bottom", 340 - ($(window).width() - 1000)*.1 - $(window).width()*$(window).width()*$(window).width()*$(window).width()*0.000000000008);
     } else if ($(".wrapper").width() >= 2084) {
-      $(".main-cup").css("margin-bottom",$(".content").height() - $(".wrapper").height() + 350);
+      $(".main-cup").css("margin-bottom",85);
+    } else {
+      $(".main-cup").css("margin-bottom",340);
     }
     
   
@@ -99,7 +101,9 @@ function closePopup() {
     frames.hide();
     frames.eq(0).show().addClass("act-frame");
     
-    gallery.find(".ttl").textShadow("1px 1px #000");
+    gallery.find(".ttl").each(function() {
+      $(this).html("<div class='txt'><span>" + $(this).html() + "</span></div><div class='shadow'><span>" + $(this).html() + "</span></div>");
+    });
     
     gallery.append("<div class='prev' />");
     gallery.append("<div class='next' />");
