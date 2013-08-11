@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Nescafe.ru</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+
+    <!--[if IE]>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" />
+      <script type="text/javascript" src="js/excanvas.compiled.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/tools.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jQueryRotate.2.2.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <!-- New scripts -->
+    <script type="text/javascript" src="js/text-shadow.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- New scripts END -->
+    
+    <script type="text/javascript">
+    
+      /* Server hours and minutes should be inserted below */
+      var h=6;
+      var m=0;
+
+      function startHours() {
+        htxt=checkTime(h);
+        if (h == 23) {
+          h=0;
+        } else {
+          h=h+1;
+        }
+        $(".pt-time .hours").html(htxt);
+        t=setTimeout(function(){startHours()},3600000);
+      }
+
+      function startMinutes() {
+        mtxt=checkTime(m);
+        if (m == 59) {
+          m=0;
+        } else {
+          m=m+1;
+        }
+        $(".pt-time .minutes").html(mtxt);
+        t=setTimeout(function(){startMinutes()},60000);
+      }
+      
+      function checkTime(i)
+      {
+        if (i<10)
+        {
+          i="0" + i;
+        }
+        return i;
+      }
+
+      $(document).ready(function() {
+        startHours();
+        startMinutes();
+      });
+    
+    </script>
+    
+  </head>
+
+  <body class="page-sunrise">
+   
+    <!-- wrapper -->
+    <div class="wrapper">
+      <div class="wrapper-inner">
+
+        <!-- header -->
+        <div class="header">
+
+          <div class="header-fix-bg"></div>
+          <!-- header fix -->
+          <div class="header-fix">
+
+            <div class="logo"><img src="images/logo.png" alt="" width="92" height="21" /></div>
+
+            <!-- header ctrl -->
+            <div class="header-ctrl">
+
+              <!-- header search -->
+              <div class="header-search">
+                <form action="#" method="post">
+                  <div class="header-search-input"><input type="text" name="search" value="Поиск" /></div>
+                  <div class="header-search-submit"><input type="submit" value="" /></div>
+                </form>
+              </div>
+              <!-- header search END -->
+
+              <div class="header-user-link"><a href="#">Регистрация</a></div>
+              <div class="header-user-link"><a href="#">Авторизация</a></div>
+
+            </div>
+            <!-- header ctrl END -->
+
+            <!-- header menu -->
+            <div class="header-menu">
+              <ul>
+                <li><a href="#">Наш кофе</a></li>
+                <li><a href="#">Производство кофе</a></li>
+                <li><a href="#">Путеводитель по кофе</a></li>
+                <li><a href="#">Социальная ответственность</a></li>
+              </ul>
+            </div>
+            <!-- header menu END -->
+
+          </div>
+          <!-- header fix END -->
+
+          <div class="header-expert-link"><a href="#">Задайте вопрос эксперту</a></div>
+
+          <!-- header section -->
+          <div class="header-section">
+            <h1>Встречайте рассветы<br />по всему свету с Nescaf<em>é</em><sup>&reg;</sup></h1>
+          </div>
+          <!-- header section END -->
+          
+          <!-- header links -->
+          <div class="header-links">
+            <div class="hl-cont">
+            	<div class="link link-wallpapers">
+            	  <div class="cont" onclick="openPopup('wallpapers-popup');return false;"><img src="images/header-links-pt.png" /> Скачать обои для рабочего стола</div>
+            	</div>
+            	<div class="link link-screensaver">
+            	  <div class="cont" onclick="openPopup('screensaver-popup');return false;"><img src="images/header-links-pt.png" /> Скачать скринсейвер</div>
+            	</div>
+            </div>
+          </div>
+          <!-- header links END -->
+
+        </div>
+        <!-- header END -->
+
+        <!-- content -->
+        
+        <div class="content">
+        
+          <!-- Picture slider -->
+          <div class="sunrise-slider">
+          	<div class="slide">
+              <!-- Path to picture in bacground -->
+          		<div class="sunrise-pic" style="background-image:url(files/sunrise-spb.jpg)"></div>
+          		
+          		<div class="pic-titles">
+          			<div class="pic-title pic-title-onload">
+          			  <div class="pt-city">Санкт-Петербург</div>
+          			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
+          			</div>
+          			
+          			<div class="pic-title pic-title-afterload">
+          			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
+          			  <div class="pt-city">Санкт-Петербург</div>
+          			  <div class="pt-now">Смотри рассвет в Архангельске через час</div>
+          			</div>
+          		</div>
+          	</div>
+            <div class="slide">
+          		<div class="sunrise-pic" style="background-image:url(files/sunrise-murmansk.jpg)"></div>
+          		
+          		<div class="pic-titles">
+          			<div class="pic-title pic-title-onload">
+          			  <div class="pt-city">Мурманск</div>
+          			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
+          			</div>
+          			
+          			<div class="pic-title pic-title-afterload">
+          			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
+          			  <div class="pt-city">Мурманск</div>
+          			  <div class="pt-now">Смотри рассвет в Архангельске через час</div>
+          			</div>
+          		</div>
+          	</div>
+            <div class="slide">
+          		<div class="sunrise-pic" style="background-image:url(files/sunrise-vologda.jpg)"></div>
+          		
+          		<div class="pic-titles">
+          			<div class="pic-title pic-title-onload">
+          			  <div class="pt-city">Вологда</div>
+          			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
+          			</div>
+          			
+          			<div class="pic-title pic-title-afterload">
+          			  <div class="pt-time"><span class="hours"></span>:<span class="minutes"></span></div>
+          			  <div class="pt-city">Вологда</div>
+          			  <div class="pt-now">Смотри рассвет в Архангельске через час</div>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+          <!-- Picture slider END -->
+          
+          <div class="main-cup"></div>
+            
+        </div>
+        
+        <!-- content END -->
+
+      </div>
+      
+    </div>
+    <!-- wrapper END -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-inner">
+      
+        <!-- footer contest -->
+        <div class="footer-contest">
+         <div class="pic"></div>
+         <div class="fc-content">
+          <a class="vk-link" href="http://vk.com/nescafe"><img src="files/ico-vk.png" alt="Вконтакте"/></a>
+          <a href="http://vk.com/nescafe"><u>участвуйте в конкурсах<br />и выиграйте кофе-машину NESCAFE</u><sup>&reg;</sup><u>&nbsp;&nbsp;Dolce Gusto</u><sup>&reg;</sup></a>
+         </div>
+        </div>
+        <!-- footer contest END -->
+
+        <!-- footer social -->
+        <div class="footer-social">
+          <div class="footer-social-more">
+            <a href="#" class="footer-social-more-link">Поделиться +</a>
+            <div class="footer-social-more-window">
+              <div class="footer-social-more-window-top"></div>
+              <div class="footer-social-more-window-middle">
+                <a href="#" class="footer-social-more-window-close"></a>
+                <div class="footer-social-more-window-title">Поделиться</div>
+                <div class="footer-social-more-window-list">
+                  <div class="footer-social-more-window-col">
+                    <div class="footer-social-more-item">
+                      <a href="#"><img src="images/footer-social-more-1.png" alt="" width="19" height="19" />Facebook</a>
+                    </div>
+                    <div class="footer-social-more-item">
+                      <a href="#"><img src="images/footer-social-more-2.png" alt="" width="19" height="18" />В Контакте</a>
+                    </div>
+                    <div class="footer-social-more-item">
+                      <a href="#"><img src="images/footer-social-more-3.png" alt="" width="19" height="18" />Одноклассники</a>
+                    </div>
+                    <div class="footer-social-more-item">
+                      <a href="#"><img src="images/footer-social-more-4.png" alt="" width="19" height="19" />Twitter</a>
+                    </div>
+                  </div>
+
+                  <div class="footer-social-more-window-col">
+                    <div class="footer-social-more-item">
+                      <a href="#"><img src="images/footer-social-more-5.png" alt="" width="19" height="19" />Google+</a>
+                    </div>
+                    <div class="footer-social-more-item">
+                      <a href="#"><img src="images/footer-social-more-6.png" alt="" width="19" height="19" />Мой мир</a>
+                    </div>
+                    <div class="footer-social-more-item">
+                      <a href="#"><img src="images/footer-social-more-7.png" alt="" width="19" height="19" />You Tube</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-social-more-window-bottom"></div>
+            </div>
+          </div>
+        </div>
+        <!-- footer social END -->
+
+        <!-- footer menu -->
+        <div class="footer-menu">
+          <a href="#">Nescaf<em>é</em>.com</a> <span>|</span>
+          <a href="#">Nestle.ru</a> <span>|</span>
+          <a href="#">Промо акции</a> <span>|</span>
+          <a href="#">Пресс-центр</a> <span>|</span>
+          <a href="#">О сайте</a> <span>|</span>
+          <a href="#">Связаться с нами</a>
+        </div>
+        <!-- footer menu END -->
+
+        <!-- footer menu 2 -->
+        <div class="footer-menu-2">
+          <table>
+            <tr>
+              <td><a href="#">Контакты</a></td>
+              <td class="footer-menu-2-sep"></td>
+              <td><a href="#">Карта сайта</a></td>
+              <td class="footer-menu-2-sep"></td>
+              <td><a href="#">пресс-центр</a></td>
+              <td class="footer-menu-2-sep"></td>
+              <td><a href="#">Конфиденциальность</a></td>
+              <td class="footer-menu-2-sep"></td>
+              <td><a href="#">Правовая информация</a></td>
+              <td class="footer-menu-2-sep"></td>
+              <td><a href="#">Доступность</a></td>
+            </tr>
+          </table>
+        </div>
+        <!-- footer menu 2 END -->
+
+      </div>
+
+      <div class="footer-nestle"><a href="#"><img src="images/footer-nestle.png" alt="" width="137" height="92" /></a></div>
+    </div>
+    <!-- footer END -->
+    
+    <!-- wallpaprers popup -->
+    
+    <div class="popup" id="wallpapers-popup">
+      <div class="popup-cont">
+        <h2>Обои для рабочего стола:</h2>
+        <h3>Выберите рассвет</h3>
+        
+        <div class="wallpapers-gallery">
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-2-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-3-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-3-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-2-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-3-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wg-pic">
+              <img src="files/wallpaper-1-tmb.jpg" />
+              <div class="pic-mask"></div>
+              <div class="ttl">Москва</div>
+            </div>
+            <div class="wg-links">
+              <a href="#">800&times;600</a><br/>
+              <a href="#">1024&times;768</a><br/>
+              <a href="#">1280&times;900</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="other-pup-link">
+          Рассветы в твоем компюьтере:<br />
+          <a href="#" onclick="openPopup('screensaver-popup');return false;">Скачать скринсейвер</a>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    <!-- wallpaprers popup END -->
+    
+    <!-- screensaver popup -->
+    
+    <div class="popup" id="screensaver-popup">
+      <div class="popup-cont">
+        <h2>Скринсейвер:</h2>
+        
+        <div class="screensaver-cont">
+          <img src="images/screensaver-pic.jpg"/><br />
+          <a href="#">скачать скринсейвер</a>
+        </div>
+        
+        <div class="other-pup-link">
+          Рассветы в твоем компюьтере:<br />
+          <a href="#" onclick="openPopup('wallpapers-popup');return false;">Скачать обои для рабочего стола</a>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- screensaver popup END -->
+
+  </body>
+</html>
